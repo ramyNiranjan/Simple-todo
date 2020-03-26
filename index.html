@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/7653ca745b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Todo-List|Emakina</title>
+  </head>
+  <body>
+    <header class="todo-header">
+      <nav class="todo-header__nav">
+        <h1 class="todo-header__nav-header">Todo-List</h1>
+        <div class="todo-header__nav-logo">
+          <img src="./asset/undraw_tabs_jf82.svg" alt="" srcset="" />
+        </div>
+      </nav>
+    </header>
+    <section class="create-list">
+      <i class="fas fa-plus-circle create-list__icon"></i>
+      <h3 class="create-list__header">Add List</h3>
+    </section>
+    <main class="todo-main">
+      <section class="list-modal modal-display">
+        <div class="list-modal__container">
+          <div class="list-modal__close">X</div>
+          <form class="list-modal__popup">
+            <div class="list-modal__popup-items">
+              <input
+                type="text"
+                size="20"
+                name="title"
+                placeholder="add title"
+              />
+              <textarea
+                name="desc"
+                id=""
+                cols="20"
+                rows="3"
+                placeholder="add description"
+              ></textarea>
+              <input type="submit" value="Add" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="todo-list"></section>
+    </main>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/utility-functions.js"></script>
+    <script src="./scripts/app.js"></script>
+    <footer class="side-footer">
+      <p>&copy; 2020 Made by Ramy</p>
+    </footer>
+  </body>
+</html>
